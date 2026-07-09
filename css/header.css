@@ -1,0 +1,209 @@
+/*==================================================
+    HEADER
+==================================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(7,7,7,.72);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+/*============== TOP BAR ==============*/
+
+.top-bar{
+
+    background:#000;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.top-bar-content{
+
+    height:42px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.top-bar span{
+
+    font-size:.82rem;
+
+    color:var(--text-light);
+
+}
+
+.top-bar i{
+
+    color:var(--primary-color);
+
+    margin-right:.4rem;
+
+}
+
+/*============== NAVBAR ==============*/
+
+.navbar{
+
+    height:82px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/*============== LOGO ==============*/
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    color:var(--white);
+
+    transition:var(--transition);
+
+}
+
+.logo:hover{
+
+    color:var(--primary-color);
+
+}
+/*=========================================
+    NAVIGATION MENU
+=========================================*/
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2.2rem;
+
+}
+
+.nav-menu li{
+
+    position:relative;
+
+}
+
+.nav-menu a{
+
+    color:var(--white);
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.nav-menu a:hover{
+
+    color:var(--primary-color);
+
+}
+
+.nav-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary-color);
+
+    transition:var(--transition);
+
+}
+
+.nav-menu a:hover::after{
+
+    width:100%;
+
+}
+
+/*=========================================
+    ICONS
+=========================================*/
+
+.nav-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+.nav-icons button{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:var(--white);
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.nav-icons button:hover{
+
+    background:var(--primary-color);
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-orange);
+
+}
